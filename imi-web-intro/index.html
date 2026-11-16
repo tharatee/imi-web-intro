@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Posts Explorer | Web Development</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Posts Explorer</h1>
+            <p>Explore posts from JSONPlaceholder API</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="intro">
+            <h2>Latest Posts</h2>
+            <p>
+                This website retrieves posts from an open REST API
+                and displays them dynamically.
+            </p>
+
+            <button id="reloadButton">Reload Posts</button>
+        </section>
+
+        <section class="posts-section">
+
+            <div id="status" class="status">
+                Загрузка…
+            </div>
+
+            <div id="postsContainer" class="posts-grid">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>
+            Практическая работа №0 |
+            Introduction to Modern Web Development
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

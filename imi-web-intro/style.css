@@ -1,0 +1,148 @@
+/* General settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main container */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    background: #263b80;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+}
+
+/* Introduction section */
+
+.intro {
+    text-align: center;
+    padding: 35px 0;
+}
+
+.intro h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    margin-bottom: 20px;
+}
+
+/* Reload button */
+
+button {
+    background-color: #263b80;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #4059ad;
+}
+
+/* Status messages */
+
+.status {
+    text-align: center;
+    font-size: 18px;
+    padding: 25px;
+}
+
+.error {
+    color: #d62828;
+    background-color: #ffe5e5;
+    border-radius: 8px;
+}
+
+/* Posts grid */
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+/* Individual post cards */
+
+.post-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.post-card h3 {
+    color: #263b80;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.post-card p {
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.post-id {
+    font-size: 13px;
+    color: #888;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #263b80;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+
+@media (max-width: 650px) {
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .intro h2 {
+        font-size: 23px;
+    }
+
+}
